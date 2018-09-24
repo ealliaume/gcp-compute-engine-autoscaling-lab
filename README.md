@@ -28,11 +28,6 @@ Let's start with a bit of terminology, your applications will use:
 - instance templates, convenient way to save a VM instance's configuration so you can use it later to create new VM instances or groups of VM instances
 - managed instance groups, uses an instance template to create a group of identical instances. Compute Engine offers two different types of instance groups: managed and unmanaged instance groups, we will focus on managed instances group here. 
 
-<img src="./static/gae_hierarchy.svg" align="center" width="600" />
-
-In this Lab, we will focus on App Engine Flexible environment.
-
-
 ## Target Architecture
 
 <img src="static/target-architecture.png" />
