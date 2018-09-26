@@ -12,7 +12,7 @@ At the end of the lab you will be able to:
 - **create buckets and files** on Google Cloud Storage, and make some files public
 - **create a compute engine instance** on Google Compute Engine
 - **create instance templates** and **instance groups** and play with auto scaling
-- **configure and use a **multi-regions load balancer**
+- configure and use a **multi-regions load balancer**
 
 This lab should take approximately 60 minutes.
 You will need to use you own google cloud account.
@@ -50,14 +50,15 @@ For more information about this prerequisite step please refer to the [official 
 
 * Create a bucket (Gcp menu > Storage > Storage)
 
-* Upload the following 2 files which you can download from these urls:
-  * Belgium URL: https://storage.googleapis.com/era-boot/frontend-belgium.py
-  * Sydney URL: https://storage.googleapis.com/era-boot/frontend-sydney.py
+* Upload the following 2 files which you can find in the _labs-files_ directory:
+  * Belgium configuration: _frontend-belgium.py_
+  * Sydney configuration: _frontend-sydney.py_
+
+  We could use exactly the same file in different region, the only reason we are 2 of those it to be able to customize the messages served by the python endpoints. 
 
 * Make objects public using the cloud shell. To do this click the 'activate cloud shell' terminal in the toolbar and run the following commands:
   * `gsutil acl ch -u AllUsers:R gs://era-boot/frontend-belgium.py`
   * `gsutil acl ch -u AllUsers:R gs://era-boot/frontend-sydney.py`
-  * OR optionally update the bucket to make _everything_ public `gsutil defacl ch -u allUsers:R gs://era-boot`
 
 The syntax for accessing resources is:
 `gs://[BUCKET_NAME]/[OBJECT_NAME]`. For more information on the cloud shell and gsutil see : https://cloud.google.com/storage/docs/gsutil
