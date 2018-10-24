@@ -15,7 +15,7 @@ At the end of the lab you will be able to:
 - configure and use a **multi-regions load balancer**
 
 This lab should take approximately 60 minutes.
-You will need to use you own google cloud account.
+You will need to use your own google cloud account.
 
 ## What is the Google Compute Engine
 
